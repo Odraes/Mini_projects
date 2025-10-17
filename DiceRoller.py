@@ -1,17 +1,16 @@
 import random
-finish = False
-while not finish:
+
+while true:
     print("roll the dice? (Y/N)")
     answer = input()
     answer = answer.upper()
     if answer == "Y":
-        dice = random.randint(1, 9)
-        dice2 = random.randint(1, 9)
-        print(f"the dice is ({dice}) ({dice2})")
-        pass
+        die1 = random.randint(1, 9)
+        die2 = random.randint(1, 9)
+        print(f"the dice is ({die1}) ({die2})")
     elif answer == "N":
         print("thank you for playing")
-        finish = True
+        break
     else:
         print("invalid choice")
 
